@@ -26,12 +26,12 @@ local myGuy = display.newImage( "./assets/sprites/Idle.png" )
 myGuy.x = display.contentCenterX
 myGuy.y = display.contentCenterY
 myGuy.id = "the guy"
-myGuy.isFixedRotation = true
 physics.addBody( myGuy, "dynamic", { 
     density = 3.0, 
     friction = 0.5, 
     bounce = 0.3 
     } )
+myGuy.isFixedRotation = true
 
 local dPad = display.newImage( "./assets/sprites/d-pad.png" )
 dPad.x = 150
