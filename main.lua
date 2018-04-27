@@ -62,11 +62,9 @@ rightArrow.id = "right arrow"
 function upArrow:touch( event )
     if ( event.phase == "ended" ) then
         -- move the character up
-        transition.moveBy( myGuy, { 
-        	x = 0, -- move 0 in the x direction 
-        	y = -150, -- move up 50 pixels
-        	time = 100 -- move in a 1/10 of a second
-        	} )
+
+		myGuy:setLinearVelocity( 0, -750 )
+
     end
 
     return true
@@ -75,13 +73,10 @@ end
 function downArrow:touch( event )
     if ( event.phase == "ended" ) then
         -- move the character up
-        transition.moveBy( myGuy, { 
-        	x = 0, -- move 0 in the x direction 
-        	y = 50, -- move up 50 pixels
-        	time = 100 -- move in a 1/10 of a second
-        	} )
-    end
 
+		myGuy:setLinearVelocity( 0, 650 )
+
+    end
     return true
 end
 
