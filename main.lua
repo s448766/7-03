@@ -63,11 +63,11 @@ function upArrow:touch( event )
     if ( event.phase == "ended" ) then
         -- move the character up
 
-<<<<<<< HEAD
+
 		myGuy:setLinearVelocity( 0, -750 )
-=======
-        myGuy:setLinearVelocity( 0, -750 )
->>>>>>> c0dd6b4113d1dea26f4c5262d72da96c047366eb
+
+ 		myGuy:setLinearVelocity( 0, -750 )
+ 	
 
     end
 
@@ -78,11 +78,11 @@ function downArrow:touch( event )
     if ( event.phase == "ended" ) then
         -- move the character up
 
-<<<<<<< HEAD
+
 		myGuy:setLinearVelocity( 0, 650 )
-=======
+
         myGuy:setLinearVelocity( 0, 650 )
->>>>>>> c0dd6b4113d1dea26f4c5262d72da96c047366eb
+
 
     end
     return true
