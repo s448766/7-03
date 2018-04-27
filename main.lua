@@ -63,7 +63,11 @@ function upArrow:touch( event )
     if ( event.phase == "ended" ) then
         -- move the character up
 
+<<<<<<< HEAD
 		myGuy:setLinearVelocity( 0, -750 )
+=======
+        myGuy:setLinearVelocity( 0, -750 )
+>>>>>>> c0dd6b4113d1dea26f4c5262d72da96c047366eb
 
     end
 
@@ -74,7 +78,11 @@ function downArrow:touch( event )
     if ( event.phase == "ended" ) then
         -- move the character up
 
+<<<<<<< HEAD
 		myGuy:setLinearVelocity( 0, 650 )
+=======
+        myGuy:setLinearVelocity( 0, 650 )
+>>>>>>> c0dd6b4113d1dea26f4c5262d72da96c047366eb
 
     end
     return true
@@ -84,10 +92,10 @@ function leftArrow:touch( event )
     if ( event.phase == "ended" ) then
         -- move the character up
         transition.moveBy( myGuy, { 
-        	x = -50, -- move 0 in the x direction 
-        	y = 0, -- move up 50 pixels
-        	time = 100 -- move in a 1/10 of a second
-        	} )
+            x = -50, -- move 0 in the x direction 
+            y = 0, -- move up 50 pixels
+            time = 100 -- move in a 1/10 of a second
+            } )
     end
 
     return true
@@ -97,10 +105,10 @@ function rightArrow:touch( event )
     if ( event.phase == "ended" ) then
         -- move the character up
         transition.moveBy( myGuy, { 
-        	x = 50, -- move 0 in the x direction 
-        	y = 0, -- move up 50 pixels
-        	time = 100 -- move in a 1/10 of a second
-        	} )
+            x = 50, -- move 0 in the x direction 
+            y = 0, -- move up 50 pixels
+            time = 100 -- move in a 1/10 of a second
+            } )
     end
 
     return true
